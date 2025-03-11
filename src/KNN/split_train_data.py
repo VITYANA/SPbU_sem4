@@ -9,7 +9,6 @@ def train_test_split(
     test_size: float = 0.2,
     random_state: Optional[int] = None,
 ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-
     if test_size < 0 or test_size > 1:
         raise ValueError("test_size must be in [0, 1]")
 

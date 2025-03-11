@@ -9,9 +9,7 @@ V = TypeVar("V")
 
 
 class KDTree(Generic[V]):
-
     def __init__(self, X: List[Point[T]], leaf_size: int):
-
         self._root: KDNode = KDNode(X, leaf_size)
         self._leaf_size: int = leaf_size
 

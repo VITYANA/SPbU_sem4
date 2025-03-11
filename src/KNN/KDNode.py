@@ -27,9 +27,7 @@ class Point(Generic[T]):
 
 
 class KDNode(Generic[T]):
-
     def __init__(self, X: List[Point[T]], leaf_size: int):
-
         if leaf_size <= 0:
             raise AttributeError("Leaf size must be strictly positive")
 
@@ -57,7 +55,6 @@ class KDNode(Generic[T]):
 
     @staticmethod
     def _choose_axis(X: List[Point[T]]) -> int:
-
         output_axis = 0
         max_spread = -inf
 
